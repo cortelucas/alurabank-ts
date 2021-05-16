@@ -1,12 +1,6 @@
 class Negotiation {
-  private _date;
-  private _quant;
-  private _value;
-  constructor (date, quant, value) {
-    this._date = date;
-    this._quant = quant;
-    this._value = value;
-  }
+
+  constructor (private _date: Date, private _quant: number, private _value: number) {}
 
   get date() {
     return this._date;
